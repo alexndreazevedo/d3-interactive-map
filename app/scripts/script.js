@@ -53,7 +53,15 @@ const build = (dots, data) => {
     .enter()
       .append('g')
       .attr('class', 'circle')
-      .attr('transform', (d) => 'translate(' + toScale(d.position.x) + ', ' + toScale(d.position.y) + ')');
+      .attr('transform', (d) => 'translate(' + toScale(d.position.x) + ', ' + toScale(d.position.y) + ')')
+      .on('mouseover', function () {
+        d3.select(this)
+          .attr('class', 'circle active');
+      })
+      .on('mouseout', function () {
+        d3.select(this)
+          .attr('class', 'circle');
+      });
 
   circle.append('circle')
     .transition().ease(d3.easeBackOut).duration(animation).delay(delayAnimation)

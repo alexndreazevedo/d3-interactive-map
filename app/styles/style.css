@@ -8,9 +8,18 @@ circle {
   fill: #9b9b9b;
 }
 
+.circle * {
+  cursor: pointer;
+}
+
 .circle circle {
   stroke: #fff;
   stroke-width: 2px;
+  transition: fill .5s;
+}
+
+.circle.active circle {
+  fill: #707070;
 }
 
 text.region {
