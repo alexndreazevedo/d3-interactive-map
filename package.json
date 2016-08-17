@@ -1,0 +1,22 @@
+{
+  "name": "d3-interactive-map",
+  "version": "0.0.1",
+  "description": "Animated map chart using D3",
+  "main": "",
+  "scripts": {
+    "start": "http-server app -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexndreazevedo/d3-interactive-map.git"
+  },
+  "keywords": [],
+  "author": [
+    "Alexandre Azevedo <alexndreazevedo@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

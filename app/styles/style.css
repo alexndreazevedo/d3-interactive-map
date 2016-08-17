@@ -1,0 +1,33 @@
+text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+}
+
+circle {
+  shape-rendering: geometricPrecision;
+  fill: #9b9b9b;
+}
+
+.circle circle {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+text.region {
+  font-size: .7em;
+  transform: translate(0, -.7em);
+  fill: #e6e6e6;
+}
+
+text.amount {
+  font-size: 1.2em;
+  font-weight: 600;
+  transform: translate(0, .55em);
+  fill: #fff;
+}
+
+text.percentual {
+  font-size: .7em;
+  transform: translate(0, 2em);
+  fill: #d5d5d5;
+}
